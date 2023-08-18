@@ -34,9 +34,19 @@ let lowerText:string = text.toLowerCase()
 // Declare a variable longText of type string and assign it a long sentence, extract the first 10 characters
 // from it and store them in a vairable called shortText
 
+let longText = "This is a long sentence for demo purpose"
+let shortText = longText.replace(/\s/g, '').slice(0, 10)
+console.log(shortText)
+
 // todo --> String Comparison
 // Declare 2 variables str1 and str2 of type string and assign them diff sentence. Compare the 2 strings
 // and store the result (true or false) in a variable result
+
+const str1:string = "this is sentence of string 1"
+const str2:string = "this is sentence of string 2"
+
+const result:boolean = str1 === str2
+
 
 // todo --> String Template
 // Declare variable product and price of type and number, create string using tempalte literals to 
