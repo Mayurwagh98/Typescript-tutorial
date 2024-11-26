@@ -15,3 +15,22 @@ function createLatestUser({firstname,isPaid}:{firstname:string, isPaid:boolean})
 }
 
 createLatestUser({firstname:"mayur",isPaid:true})
+
+///// type aliases ////
+
+type User= {
+    firstname:string;
+    email:string;
+    isActive:boolean;
+}
+
+function createOtherUser(user:User){
+    console.log(user)
+}
+createOtherUser({firstname:"mayur",email:"abc@gmail.com",isActive:false})
+
+function creteOtherUser2(user:User):User{
+    return {firstname:"mayur",email:"abc@gmail.com",isActive:false}
+}
+
+createOtherUser({firstname:"mayur",email:"abc@gmail.com",isActive:false})
