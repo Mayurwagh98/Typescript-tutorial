@@ -33,3 +33,30 @@ function getUser(name:string, email:string, isPaid:boolean = false){
     console.log(name)
 }
 getUser("mayur","mayur@yahoo.com")
+
+// how to restrict the return value of the function?
+function returnSun(num: number):number {
+    return num  + 2
+    // return "mayur" -> as i have restricted the return value to number, this piece of code will throw an error
+}
+
+// ES6 sytanx of strict return value
+const returnSum2 = (num:number):number =>{
+    return num + 2
+}
+
+const heros = ["thor","spider-man","iron man"]
+
+heros.map((hero):string =>{
+    return `hero is ${hero}`
+})
+
+// function which doesn't return anything
+function conosleErrors(errorMsg:string):void{ // as func is not returning anything so need to add as void
+    console.log('erroMsg:', errorMsg)
+}
+
+// function which will never return a value
+function checkErrors(errorMsg: string):never{
+    throw new Error(errorMsg)
+}
