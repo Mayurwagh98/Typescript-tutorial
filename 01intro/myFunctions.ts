@@ -55,3 +55,8 @@ heros.map((hero):string =>{
 function conosleErrors(errorMsg:string):void{ // as func is not returning anything so need to add as void
     console.log('erroMsg:', errorMsg)
 }
+
+// function which will never return a value
+function checkErrors(errorMsg: string):never{
+    throw new Error(errorMsg)
+}
