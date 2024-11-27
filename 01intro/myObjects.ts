@@ -4,7 +4,7 @@ function createUser({ firstname, isPaid }: { firstname: string; isPaid: boolean 
 
 // restricting return value as object
 
-// reurning an empty object 
+// returning an empty object 
 function createNewUser():{}{
     return {}
 }
