@@ -17,3 +17,15 @@ enum SeatChoice2{
 
 const userSeat = SeatChoice.AISLE
 const userSeat2 = SeatChoice2.WINDOW
+
+// above code generates too much js code which is ugly & hard to understand
+// if you want a clear and short code try the below version
+// by just adding const changes your code
+const enum SeatChoice3{
+    AISLE, 
+    MIDDLE, 
+    WINDOW
+}
+
+// now in js you will see only this code -> var userSeat3 = SeatChoice2.WINDOW as compared to other 2 above cases
+const userSeat3 = SeatChoice2.WINDOW
