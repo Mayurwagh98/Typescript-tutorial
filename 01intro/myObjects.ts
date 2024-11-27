@@ -41,7 +41,7 @@ type NewUser = {
     readonly _id:string,
     name:string,
     email:string,
-    isPaid:boolean
+    isPaid?:boolean // optional can be represented by ?
 }
 
 let newUser: NewUser ={
