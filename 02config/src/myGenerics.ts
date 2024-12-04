@@ -20,3 +20,13 @@ function identityThree<Type>(val:Type):Type{
 function identityFour<T>(val:T):T{
     return val
 }
+
+// we can make our own type as below
+interface Bottle{
+    brand: string,
+    type: number
+}
+
+function identityFive<Bottle>(val:Bottle):Bottle{
+    return val
+}
