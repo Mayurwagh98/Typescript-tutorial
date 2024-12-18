@@ -8,3 +8,11 @@ interface Course {
   author: string;
   subject: string;
 }
+
+class Sellable<T>{
+  public cart:T[] = []
+  
+  addToCart(product:T){
+    this.cart.push(product)
+  }
+}
